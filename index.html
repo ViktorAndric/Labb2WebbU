@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { color: #2A42D6; }
+        table { border-collapse: collapse; width: 100%; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        pre { background-color: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>BookAPI - Documentation</h1>
+
+    <h2>Overview</h2>
+    <p>This api is connected to a database with all the books in the world. Just follow the documentation and try it out</p>
+
+    <h2>Base URL</h2>
+    <p>http://localhost:3000/book</p>
+
+    <h2>Endpoints</h2>
+    
+    <h3>GET /book</h3>
+    <p>Retrieves all the books in the database</p>
+    <h4>Response:</h4>
+    <pre>{ "title": "1984", "author": "George Orwell" }</pre>
+
+    <h3>GET /book/id</h3>
+    <p>Retrieves one book by id from the database</p>
+    <h4>Parameters:</h4>
+    <p>int id</p>
+    <h4>Response:</h4>
+    <pre>{ "title": "1984", "author": "George Orwell" }</pre>
+
+    <h3>POST /book</h3>
+    <p>Insert a new book in the database</p>
+    <h4>Parameters:</h4>
+    <h4>Body:</h4>
+    <p>string title, string author</p>
+    <h4>Response:</h4>
+    <pre>{ "title": "1984", "author": "George Orwell" }</pre>
+
+    <h3>PUT /book/id</h3>
+    <p>Updates a book in the database by Id</p>
+    <h4>Parameters:</h4>
+    <p>int Id</p>
+    <h4>Body:</h4>
+    <p>string title, string author</p>
+    <h4>Response:</h4>
+    <pre>{ "title": "1984", "author": "George Orwell" }</pre>
+
+    <h3>DELETE /book/id</h3>
+    <p> Deletes a book by id in the database</p>
+    <h4>Parameters:</h4>
+    <p>int Id</p>
+    <h4>Response:</h4>
+    <pre>{ "title": "1984", "author": "George Orwell" }</pre>
+
+</body>
+</html>
